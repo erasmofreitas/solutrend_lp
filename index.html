@@ -7,6 +7,11 @@
   <title>Solutrend Group — Technology Partners</title>
   <meta name="description" content="Solutrend Group partners with executive teams to turn complex technology into measurable business outcomes.">
   <link rel="canonical" href="https://solutrend.com/">
+  <meta name="robots" content="noindex">
+  <link rel="alternate" hreflang="pt" href="https://solutrend.com/pt/">
+  <link rel="alternate" hreflang="en" href="https://solutrend.com/en/">
+  <link rel="alternate" hreflang="es" href="https://solutrend.com/es/">
+  <link rel="alternate" hreflang="x-default" href="https://solutrend.com/en/">
 
   <!-- Favicons (placeholders) -->
   <link rel="icon" href="/assets/favicon.ico">
@@ -41,23 +46,26 @@
   <script>
     (function () {
       var lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-      var base = window.location.origin || "";
       var hash = window.location.hash || "";
 
       var target = "/en/";
-      if (lang.indexOf("pt") === 0) {
+
+      if (lang.startsWith("pt")) {
         target = "/pt/";
-      } else if (lang.indexOf("es") === 0) {
+      }
+      else if (lang.startsWith("es")) {
         target = "/es/";
       }
 
-      window.location.replace(target + hash);
+      if (window.location.pathname === "/") {
+        window.location.replace(target + hash);
+      }
     })();
   </script>
 </head>
 <body>
   <div class="redirect-shell">
-    <p>You are being redirected to Solutrend.</p>
+    <p>Redirecting you to your preferred language...</p>
     <noscript>
       <p>Please select your language:</p>
       <p>
