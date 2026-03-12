@@ -2,201 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Solutrend — Strategic Technology. Engineered for Results.</title>
+  <title>Solutrend Group — Technology Partners</title>
+  <meta name="description" content="Solutrend Group partners with executive teams to turn complex technology into measurable business outcomes.">
+  <link rel="canonical" href="https://solutrend.com/">
+
+  <!-- Favicons (placeholders) -->
+  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
 
   <!-- Inter font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: #0F172A;
+      color: #E5E7EB;
+    }
+    .redirect-shell {
+      text-align: center;
+      padding: 2rem;
+    }
+    .redirect-shell a {
+      color: #93C5FD;
+    }
+  </style>
+
+  <script>
+    (function () {
+      var lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+      var base = window.location.origin || "";
+      var hash = window.location.hash || "";
+
+      var target = "/en/";
+      if (lang.indexOf("pt") === 0) {
+        target = "/pt/";
+      } else if (lang.indexOf("es") === 0) {
+        target = "/es/";
+      }
+
+      window.location.replace(target + hash);
+    })();
+  </script>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <div class="logo" aria-label="Solutrend">
-        <span class="logo-mark">Solutrend</span>
-      </div>
-      <nav class="nav" aria-label="Main navigation">
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-        </button>
-        <ul class="nav-list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#contact" class="btn btn-primary header-cta">Talk to us</a>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="section section-hero" aria-labelledby="hero-heading">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1 id="hero-heading">Strategic technology. Engineered for results.</h1>
-          <p class="hero-subtitle">
-            Solutrend helps executive teams turn complex technology challenges into measurable business outcomes — from digital products to AI-enabled squads.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Talk to us</a>
-            <a href="#solutions" class="btn btn-ghost">Explore solutions</a>
-          </div>
-          <p class="hero-footnote">
-            Trusted by leaders who need technology that moves as fast as their strategy.
-          </p>
-        </div>
-        <div class="hero-highlight" aria-hidden="true">
-          <div class="hero-card">
-            <p class="hero-card-label">Execution you can measure</p>
-            <p class="hero-card-metric">90<span>%</span></p>
-            <p class="hero-card-caption">of initiatives reach production in under 90 days*</p>
-          </div>
-          <p class="hero-card-disclaimer">*Illustrative performance benchmark</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services / Cards -->
-    <section class="section section-light" id="services" aria-label="Solutrend services">
-      <div class="container">
-        <header class="section-heading">
-          <p class="eyebrow">What we do</p>
-          <h2>From strategy deck to shipped product.</h2>
-          <p class="section-lead">
-            We combine senior product thinking, engineering excellence, and AI-native ways of working to close the gap between planning and delivery.
-          </p>
-        </header>
-
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Products</h3>
-            <p>
-              Design and launch digital products that align with your roadmap — discovery, MVPs, and iterative releases with clear business KPIs.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Engineering</h3>
-            <p>
-              Modern cloud architectures, scalable platforms, and solid delivery pipelines that keep your teams shipping with confidence.
-            </p>
-          </article>
-          <article class="card">
-            <h3>AI &amp; Squads</h3>
-            <p>
-              High-performing squads augmented with AI workflows to accelerate development, reduce toil, and unlock new capabilities safely.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Solutions / Why -->
-    <section class="section" id="solutions">
-      <div class="container">
-        <div class="split-grid">
-          <div class="split-text">
-            <p class="eyebrow">Why Solutrend</p>
-            <h2>Technology partners for executive teams.</h2>
-            <p class="section-lead">
-              We bridge C-level strategy and on-the-ground delivery, ensuring each initiative is framed, prioritized, and executed with clarity.
-            </p>
-          </div>
-          <div class="split-list" id="about">
-            <ul class="why-list">
-              <li>
-                <h3>Outcome-first approach</h3>
-                <p>
-                  Every engagement starts from your business metrics, not from a predefined tech stack or methodology.
-                </p>
-              </li>
-              <li>
-                <h3>Senior, hands-on talent</h3>
-                <p>
-                  Small, experienced teams that can both define the strategy and build the solution end-to-end.
-                </p>
-              </li>
-              <li>
-                <h3>AI-native delivery</h3>
-                <p>
-                  We embed AI into discovery, coding, testing, and operations to compress time-to-value.
-                </p>
-              </li>
-              <li>
-                <h3>Transparent partnership</h3>
-                <p>
-                  Clear communication, simple engagement models, and measurable progress at every stage.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section section-light" id="contact" aria-labelledby="contact-heading">
-      <div class="container contact-grid">
-        <div class="contact-intro">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-heading">Let’s talk about your next initiative.</h2>
-          <p class="section-lead">
-            Share a bit about your context and we’ll respond with a pragmatic view of where Solutrend can help — or point you in the right direction.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:contact@solutrend.com" class="contact-link">
-              Email: contact@solutrend.com
-            </a>
-            <a href="https://wa.me/000000000000" class="contact-link" aria-label="Contact Solutrend via WhatsApp (placeholder link)">
-              WhatsApp: +00 00000-0000
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-form-wrapper">
-          <form class="contact-form" action="mailto:contact@solutrend.com" method="POST" enctype="text/plain">
-            <div class="form-field">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required autocomplete="name">
-            </div>
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required autocomplete="email">
-            </div>
-            <div class="form-field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" aria-label="Send message to Solutrend">
-              Send message
-            </button>
-          </form>
-          <p class="form-footnote">
-            This form opens your email client with a pre-filled message.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-copy">
-        &copy; <span id="year"></span> Solutrend. All rights reserved.
+  <div class="redirect-shell">
+    <p>You are being redirected to Solutrend.</p>
+    <noscript>
+      <p>Please select your language:</p>
+      <p>
+        <a href="/en/">English</a> ·
+        <a href="/pt/">Português</a> ·
+        <a href="/es/">Español</a>
       </p>
-      <div class="footer-social" aria-label="Social links">
-        <a href="#" class="footer-link" aria-label="Solutrend on LinkedIn (placeholder)">LinkedIn</a>
-        <a href="#" class="footer-link" aria-label="Solutrend on GitHub (placeholder)">GitHub</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+    </noscript>
+  </div>
 </body>
 </html>
-
