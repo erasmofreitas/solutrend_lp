@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (needVal) bodyLines.push("Need type: " + needVal);
       bodyLines.push("Message: " + messageVal);
       var body = bodyLines.join("\n");
-      var mailtoUrl = "mailto:contact@solutrend.com?subject=Contact%20form&body=" + encodeURIComponent(body);
+      var mailtoUrl = "mailto:contato@solutrend.com?subject=Contact%20form&body=" + encodeURIComponent(body);
 
       window.location.href = mailtoUrl;
 
