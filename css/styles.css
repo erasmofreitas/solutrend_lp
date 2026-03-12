@@ -163,6 +163,12 @@ textarea:focus-visible {
   border: 1px solid rgba(51, 65, 85, 0.9);
 }
 
+.lang-icon {
+  margin-right: 6px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
 .lang-link {
   font-size: 0.78rem;
   letter-spacing: 0.16em;
