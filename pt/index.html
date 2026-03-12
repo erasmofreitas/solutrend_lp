@@ -262,10 +262,18 @@
               </select>
             </div>
             <div class="form-field">
+              <label for="project-context">Contexto do projeto <span class="form-optional" aria-hidden="true">(opcional)</span></label>
+              <textarea id="project-context" name="project_context" rows="3" aria-optional="true"
+                placeholder="Ex: estamos escalando um SaaS, modernizando um sistema legado ou estruturando um novo produto digital."></textarea>
+            </div>
+            <div class="form-field">
               <label for="message">Mensagem</label>
               <textarea id="message" name="message" rows="4" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Iniciar conversa</button>
+            <p class="form-footnote">
+              Respondemos em até 24h úteis. A primeira conversa costuma levar 20–30 minutos e serve apenas para entender o contexto do seu desafio.
+            </p>
             <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
           </form>
         </div>
