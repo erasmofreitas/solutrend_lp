@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Solutrend transforma desafíos tecnológicos complejos en resultados de negocio medibles.">
   <meta name="twitter:image" content="https://solutrend.com/assets/og-image.png">
 
-  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="icon" href="/assets/icons/icon.ico">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/assets/site.webmanifest">
 
@@ -35,8 +35,13 @@
 <body>
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <div class="logo" aria-label="Solutrend">
-        <span class="logo-mark">SOLUTREND</span>
+      <div class="logo">
+        <img
+          src="/assets/images/logo_solutrend.webp"
+          alt="Solutrend"
+          class="logo-img"
+          loading="lazy"
+        />
       </div>
 
       <nav class="nav" aria-label="Navegación principal">
@@ -71,10 +76,13 @@
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="eyebrow">Consultoría estratégica e ingeniería de software para organizaciones que necesitan escalar tecnología con previsibilidad.</p>
+          <p class="eyebrow">
+            CONSULTORÍA ESTRATÉGICA Y INGENIERÍA DE SOFTWARE<br>
+            PARA EMPRESAS QUE NECESITAN ESCALAR TECNOLOGÍA CON PREVISIBILIDAD
+          </p>
           <h1 id="hero-heading">Tecnología estratégica. Resultados medibles.</h1>
           <p class="hero-subtitle">
-            Solutrend transforma desafíos tecnológicos complejos en resultados de negocio medibles — tanto en proyectos estratégicos como en la asignación de squads dedicados.
+            Solutrend transforma desafíos tecnológicos complejos en resultados de negocio medibles mediante consultoría estratégica, proyectos estructurados y squads dedicados.
           </p>
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">Iniciar conversación</a>
@@ -88,7 +96,7 @@
           <div class="hero-card">
             <p class="hero-card-label">Ejecución orientada a métricas</p>
             <p class="hero-card-metric">90<span>%</span></p>
-            <p class="hero-card-caption">de las iniciativas llegan a producción en menos de 90 días*</p>
+            <p class="hero-card-caption">Experiencia en iniciativas que alcanzan producción en ciclos de hasta 90 días*</p>
           </div>
           <p class="hero-card-disclaimer">*Benchmark ilustrativo</p>
         </aside>
@@ -268,7 +276,7 @@
             <div class="form-field">
               <label for="project-context">Contexto del proyecto <span class="form-optional" aria-hidden="true">(opcional)</span></label>
               <textarea id="project-context" name="project_context" rows="3" aria-optional="true"
-                placeholder="Ej: estamos escalando un SaaS, modernizando un sistema heredado o estructurando un nuevo producto digital."></textarea>
+                placeholder="Ej.: escalando un SaaS, modernizando heredado o nuevo producto."></textarea>
             </div>
             <div class="form-field">
               <label for="message">Mensaje</label>
@@ -276,7 +284,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Iniciar conversación</button>
             <p class="form-footnote">
-              Respondemos en un plazo de 24 horas hábiles. La primera conversación suele durar entre 20 y 30 minutos y sirve únicamente para entender el contexto de tu desafío.
+              Respondemos normalmente en hasta 24 horas hábiles. La primera conversación suele durar entre 20 y 30 minutos y sirve solo para entender el contexto de tu desafío.
             </p>
             <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
           </form>
