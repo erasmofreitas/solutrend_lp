@@ -593,6 +593,13 @@ textarea:focus-visible {
   gap: 0.35rem;
 }
 
+.form-field--hidden {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .form-field label {
   font-size: 0.85rem;
   font-weight: 500;

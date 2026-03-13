@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
     yearEl.textContent = new Date().getFullYear().toString();
   }
 
+  const loadedAt = document.getElementById("form-loaded-at");
+  if (loadedAt) {
+    loadedAt.value = Date.now().toString();
+  }
+
   const navToggle = document.querySelector(".nav-toggle");
   const navList = document.querySelector(".nav-list");
 
@@ -94,6 +99,12 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
+      var languageEl = form.querySelector('input[name="language"]');
+      var langCode = languageEl && languageEl.value ? String(languageEl.value).toLowerCase() : "en";
+      if (langCode !== "pt" && langCode !== "en" && langCode !== "es") {
+        langCode = "en";
+      }
+
       var nameEl = form.querySelector('[name="name"]');
       var emailEl = form.querySelector('[name="email"]');
       var companyEl = form.querySelector('[name="company"]');
@@ -113,11 +124,27 @@ document.addEventListener("DOMContentLoaded", function () {
       var body = bodyLines.join("\n");
       var mailtoUrl = "mailto:contato@solutrend.com?subject=Contact%20form&body=" + encodeURIComponent(body);
 
-      window.location.href = mailtoUrl;
+      try {
+        window.location.href = mailtoUrl;
 
-      form.reset();
-      var lang = (document.documentElement.lang || "en").toLowerCase();
-      successMessage.textContent = lang.indexOf("pt") === 0 ? "Obrigado! Responderemos em breve." : lang.indexOf("es") === 0 ? "¡Gracias! Te responderemos pronto." : "Thanks! We'll reply soon.";
+        form.reset();
+
+        if (langCode === "pt") {
+          successMessage.textContent = "Mensagem enviada com sucesso. Retornaremos em até 24h úteis.";
+        } else if (langCode === "es") {
+          successMessage.textContent = "Mensaje enviado con éxito. Le responderemos en un máximo de 24 horas hábiles.";
+        } else {
+          successMessage.textContent = "Message sent successfully. We will get back to you within 24 business hours.";
+        }
+      } catch (error) {
+        if (langCode === "pt") {
+          successMessage.textContent = "Não foi possível enviar sua mensagem agora. Tente novamente em alguns minutos.";
+        } else if (langCode === "es") {
+          successMessage.textContent = "No pudimos enviar tu mensaje ahora. Inténtalo de nuevo en unos minutos.";
+        } else {
+          successMessage.textContent = "We couldn't send your message right now. Please try again in a few minutes.";
+        }
+      }
     });
   }
 });
